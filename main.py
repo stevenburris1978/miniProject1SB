@@ -15,6 +15,9 @@ z = (dataOne['Close'])
 y = np.array(z)
 
 plt.plot(y, 'red')
+plt.title('Last 10 Trading Days')
+plt.ylabel('Papa Johns Closing Price')
+plt.savefig('Charts\chart1.png')
 plt.show()
 
 dataTwo = yf.download("AAPL", start="2023-08-17", end="2023-08-31")
@@ -25,7 +28,10 @@ u = (dataTwo['Close'])
 
 w = np.array(u)
 
-plt.plot(w, 'red')
+plt.plot(w, 'bs')
+plt.title('Last 10 Trading Days')
+plt.ylabel('Apple Price')
+plt.savefig('Charts\chart2.png')
 plt.show()
 
 dataThree = yf.download("LUV", start="2023-08-17", end="2023-08-31")
@@ -37,6 +43,10 @@ t = (dataThree['Close'])
 v = np.array(t)
 
 plt.plot(v, 'red')
+plt.plot(v, 'o')
+plt.title('Last 10 Trading Days')
+plt.ylabel('Southwest Airline Closing Price')
+plt.savefig('Charts\chart3.png')
 plt.show()
 
 dataFour = yf.download("TSLA", start="2023-08-17", end="2023-08-31")
@@ -48,6 +58,10 @@ r = (dataFour['Close'])
 s = np.array(r)
 
 plt.plot(s, 'red')
+plt.plot(s, 'o')
+plt.title('Last 10 Trading Days')
+plt.ylabel('Tesla Closing Price')
+plt.savefig('Charts\chart3.png')
 plt.show()
 
 dataFive = yf.download("AMZN", start="2023-08-17", end="2023-08-31")
@@ -59,37 +73,10 @@ o = (dataFive['Close'])
 p = np.array(o)
 
 plt.plot(p, 'red')
-plt.show()
-
-b = [2, 1, 5, 7, 4, 6, 8, 14, 10, 9, 18]
-
-a = np.array(b)
-
-plt.plot(a, 'red')
-plt.savefig('Charts\chart1.png')
-plt.show()
-
-plt.plot(a, 'bs')
-plt.savefig('Charts\chart2.png')
-plt.show()
-
-plt.plot(a, 'red')
-plt.plot(a, 'o')
+plt.plot(p, 'o')
 plt.title('Last 10 Trading Days')
-plt.ylabel('Stock Closing Price')
+plt.ylabel('Amazon Closing Price')
 plt.savefig('Charts\chart3.png')
 plt.show()
 
-plt.plot(a, 'red')
-plt.plot(a, 'o')
-plt.title('Last 10 Trading Days')
-plt.ylabel('Stock Closing Price')
-plt.savefig('Charts\chart4.png')
-plt.show()
 
-plt.plot(a, 'red')
-plt.plot(a, 'o')
-plt.title('Last 10 Trading Days')
-plt.ylabel('Stock Closing Price')
-plt.savefig('Charts\chart5.png')
-plt.show()
