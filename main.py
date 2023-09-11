@@ -30,7 +30,7 @@ w = np.array(u)
 
 plt.plot(w, 'bs')
 plt.title('Last 10 Trading Days')
-plt.ylabel('Apple Price')
+plt.ylabel('Apple Closing Price')
 plt.savefig('Charts\chart2.png')
 plt.show()
 
