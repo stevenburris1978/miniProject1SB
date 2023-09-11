@@ -1,5 +1,5 @@
 # INF601VA - Advanced Programming in Python
-# Jane Doe
+# Steven Burris
 # Mini Project 1
 ## To install the pip requirements go to url # https://pypi.org/project/yfinance/
 ## Required packages are in the requirements.txt file
