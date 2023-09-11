@@ -1,5 +1,21 @@
+# https://pypi.org/project/yfinance/
+
 import numpy as np
 import matplotlib.pyplot as plt
+import yfinance as yf
+
+msft = yf.Ticker("MSFT")
+
+data = yf.download("PZZA", start="2023-08-17", end="2023-08-31")
+
+print(data['Close'])
+
+z = (data['Close'])
+
+y = np.array(z)
+
+plt.plot(y, 'red')
+plt.show()
 
 b = [2, 1, 5, 7, 4, 6, 8, 14, 10, 9, 18]
 
