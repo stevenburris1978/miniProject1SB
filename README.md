@@ -6,7 +6,7 @@
 # *Description*
  ### The yfinance api is used to download stock info
  ### The closing costs of the stocks are made into arrays that work with NumPy and Matplotlib packages
- ### Charts of the stock closing costs are then created and saved into the Charts folder .png files
+ ### Charts of the stock closing prices are then created and saved into the Charts folder .png files
 
 ## *API Install Instructions*
  To get info on the API requirements go to url : [yfinance API](https://pypi.org/project/yfinance/)
