@@ -72,7 +72,7 @@ plt.plot(p, 'red')
 plt.plot(p, 'o')
 plt.title('Last 10 Trading Days')
 plt.ylabel('Amazon Closing Price')
-plt.savefig('Charts\chart5.png')
+plt.savefig('Charts\chart4.png')
 plt.show()
 
 tsla = yf.Ticker("TSLA")
@@ -89,7 +89,7 @@ plt.plot(s, 'red')
 plt.plot(s, 'o')
 plt.title('Tesla Last 10 Trading Days')
 plt.ylabel('Closing Price')
-plt.savefig('Charts\chart6.png')
+plt.savefig('Charts\chart5.png')
 plt.show()
 
 # closing prices for Tesla Aug 17 2023 to Aug 31 trading days
@@ -105,7 +105,7 @@ plt.plot(s, 'red')
 plt.plot(s, 'o')
 plt.title('Tesla Trading Days 8-17-23 to 8-30-23')
 plt.ylabel('Closing Price')
-plt.savefig('Charts\chart4.png')
+plt.savefig('Charts\chart6.png')
 plt.show()
 
 
