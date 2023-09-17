@@ -87,9 +87,9 @@ s = np.array(r)
 
 plt.plot(s, 'red')
 plt.plot(s, 'o')
-plt.title('Last 10 Trading Days')
-plt.ylabel('Tesla Closing Price')
-plt.savefig('Charts\chart4.png')
+plt.title('Tesla Last 10 Trading Days')
+plt.ylabel('Closing Price')
+plt.savefig('Charts\chart6.png')
 plt.show()
 
 # closing prices for Tesla Aug 17 2023 to Aug 31 trading days
@@ -103,8 +103,8 @@ s = np.array(r)
 
 plt.plot(s, 'red')
 plt.plot(s, 'o')
-plt.title('Trading Days Aug 17th - Aug 30th')
-plt.ylabel('Tesla Closing Price')
+plt.title('Tesla Trading Days 8-17-23 to 8-30-23')
+plt.ylabel('Closing Price')
 plt.savefig('Charts\chart4.png')
 plt.show()
 
