@@ -85,6 +85,8 @@ r = (dataFour['Close'])
 
 s = np.array(r)
 
+
+
 plt.plot(s, 'red')
 plt.plot(s, 'o')
 plt.title('Tesla Last 10 Trading Days')
@@ -97,15 +99,42 @@ dataSix = yf.download("TSLA", start="2023-08-17", end="2023-08-31")
 
 pprint.pprint(dataSix['Close'])
 
-r = (dataSix['Close'])
+m = (dataSix['Close'])
 
-s = np.array(r)
+n = np.array(m)
 
-plt.plot(s, 'red')
-plt.plot(s, 'o')
+plt.plot(n, 'red')
+plt.plot(n, 'o')
 plt.title('Tesla Trading Days 8-17-23 to 8-30-23')
 plt.ylabel('Closing Price')
 plt.savefig('Charts\chart6.png')
 plt.show()
+
+def closePrice(ticker):
+    stock = yf.Ticker(ticker)
+    hist = stock.history(period="10d")
+
+    closeList = []
+
+    for price in hist['Close']:
+        closeList.append(round(price, 3))
+
+    return closeList
+
+meta = closePrice("META")
+
+pprint.pprint(meta)
+
+j = (meta)
+
+k = np.array(j)
+
+plt.plot(k, 'red')
+plt.plot(k, 'o')
+plt.title('Meta Last 10 Trading days')
+plt.ylabel('Closing Price')
+plt.show()
+
+
 
 
